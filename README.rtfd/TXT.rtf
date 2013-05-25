@@ -1,0 +1,39 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
+{\fonttbl\f0\fnil\fcharset0 GillSans;\f1\fnil\fcharset0 LucidaGrande;}
+{\colortbl;\red255\green255\blue255;\red26\green26\blue26;\red56\green110\blue165;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{circle\}}{\leveltext\leveltemplateid2\'01\uc0\u9702 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\margl1440\margr1440\vieww18480\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sa240
+
+\f0\fs32 \cf2 In this project, you will develop a simulator and strategy function for the game of Pig. You will need to implement some higher-order functions, experiment with random number generators, and generate some ASCII art. This project uses ideas from Chapter 1 of the lecture notes.\
+Pig is a dice game with simple rules: Two players race to reach 100 total points. Each turn, a player repeatedly 
+\i rolls
+\i0  a die until either a 1 ("pig") is rolled or the player 
+\i holds
+\i0  and scores the sum of the rolls. The sum of the rolls on a turn is called the 
+\i turn total
+\i0 . At any time during a player's turn, the player is faced with two decisions:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa240
+\ls1\ilvl0
+\b \cf2 {\listtext	\'95	}roll
+\b0  - If the player rolls a\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sa240
+\ls1\ilvl1\cf2 {\listtext	
+\f1 \uc0\u9702 
+\f0 	}1: the player scores 1 point and it becomes the opponent's turn.\
+{\listtext	
+\f1 \uc0\u9702 
+\f0 	}anything else: the roll is added to the player's turn total, and the turn continues.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa240
+\ls1\ilvl0
+\b \cf2 {\listtext	\'95	}hold
+\b0  - The player scores the turn total and it becomes the opponent's turn.\
+\pard\pardeftab720\sa240
+\cf2 Someone has posted a {\field{\*\fldinst{HYPERLINK "http://www.youtube.com/watch?v=gVIvB-ahI4A"}}{\fldrslt \cf3 \ul \ulc3 Pig instructional video}}. Our rules differ somewhat from those in the video: they give 0 points to a turn that ends in a roll of 1, while we give 1 point.\
+In this project, you will create a variant of Pig that uses two different dice. Players roll a 6-sided die, unless the 
+\i sum of the scores
+\i0  of both players is a multiple of 7 (0 included), in which case they roll a 4-sided die. This sum of scores 
+\i does not
+\i0  include the turn total.}
